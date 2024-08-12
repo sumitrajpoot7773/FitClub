@@ -1,0 +1,131 @@
+.join{
+    display: flex;
+    padding: 0 2rem;
+    gap: 10rem;
+}
+
+.left-j{
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.left-j>hr{
+    position: absolute;
+    width: 10.5rem;
+    border: 2px solid var(--orange);
+    border-radius: 20%;
+    margin: -10px 0; 
+}
+
+.left-j>div{
+    display: flex;
+    gap: 1rem;
+}
+
+.right-j{
+    display: flex;
+    flex-direction: center;
+    align-items: flex-end;
+}
+
+.email-container{
+    display: flex;
+    gap: 3rem;
+    background-color: gray;
+    padding: 1rem;
+}
+
+.email-container>input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--lightgray);
+    width: 30vh;
+}
+
+.email-container>input::placeholder{
+    color: var(--lightgray);
+}
+
+.btn-j{
+    background-color: var(--orange);
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    font-size: 15px;
+}
+
+@media (max-width: 1200px) {
+    .join {
+        gap: 5rem;
+    }
+
+    .left-j {
+        font-size: 2.5rem;
+    }
+
+    .email-container>input {
+        width: 25vh;
+    }
+}
+
+@media (max-width: 992px) {
+    .join {
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+
+    .left-j {
+        font-size: 2rem;
+    }
+
+    .left-j>hr {
+        width: 8rem;
+    }
+
+    .email-container>input {
+        width: 20vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .join {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .left-j {
+        font-size: 1.5rem;
+    }
+
+    .email-container {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 0.5rem;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .email-container>input {
+        width: 80%;
+    }
+}
+
+@media (max-width: 576px) {
+    .left-j {
+        font-size: 1.2rem;
+    }
+
+    .email-container>input {
+        width: 70%;
+    }
+
+    .btn-j {
+        font-size: 12px;
+        padding: 0.5rem;
+    }
+}

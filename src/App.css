@@ -1,0 +1,38 @@
+:root{
+  --lightgray:#D9D9D9;
+  --gray:#9c9c9c;
+  --orange:#f48915;
+ --darkGray:#464D53;
+ --cloryCard:#656565;
+ --plancard:linear-gradient(210.41deg, #fa5842 1.14%, #ffa739 100.75%);
+  --appColor:#3c3f45;
+  
+}
+.App{
+    background-color: var(--appColor);
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    overflow: hidden;
+    
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+.stroke-text{
+  color: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  margin-right: 2rem;
+}
+
+.blur{
+  background: rgba(253, 120, 43, 0.69);
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(212px);
+  z-index: 0;
+}

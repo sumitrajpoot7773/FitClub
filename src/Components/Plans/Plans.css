@@ -1,0 +1,260 @@
+.plans {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.plans-header {
+    display: flex;
+    gap: 5rem;
+    font-weight: bold;
+    font-size: 3rem;
+    justify-content: center;
+    color: white;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.plans-header:nth-child(1) {
+    font-size: 2.5rem;
+}
+
+.plans-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    padding: 0 2rem;
+    margin-top: 4rem;
+    position: relative; /* Ensuring that z-index works */
+    z-index: 2; /* Higher z-index for the container to be above the blur elements */
+}
+
+.plans-container > .card-1,
+.card-2,
+.card-3 {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding-left: 2rem;
+    background-color: #656565;
+    color: white;
+    height: 75vh;
+    width: 20vw;
+    z-index: 3; /* Ensure content is above the blur elements */
+}
+
+.card-1 {
+    margin-left: 7rem;
+}
+
+.card-2 {
+    height: 85vh;
+    margin-top: -2rem;
+    gap: 1.5rem;
+    background: linear-gradient(210.41deg, #fa5842 1.14%, #ffa739 100.75%);
+}
+
+.card-2 > .price {
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 25px;
+    margin-top: -0.3rem;
+}
+
+.card-2 > .icon {
+    color: white !important;
+}
+
+.card-2 > .taxt-area {
+    margin-top: -0.5rem;
+}
+
+.card-2 > .btn {
+    color: linear-gradient(210.41deg, #fa5842 1.14%, #ffa739 100.75%) !important;
+}
+
+.card-3 {
+    margin-right: 7rem;
+}
+
+.card-1 > .heading,
+.card-3 > .heading {
+    margin-top: 2rem !important;
+}
+
+.icon {
+    height: 2rem;
+    width: 2rem;
+    color: #fa5842;
+}
+
+.heading {
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 25px;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 25px;
+}
+
+.taxt-area > div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.taxt-area > div > img {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: white;
+}
+
+.btn {
+    width: 90%;
+    height: 3rem;
+    border: none;
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.plans-blur-1,
+.plans-blur-2 {
+    position: absolute; 
+    filter: blur(200px);
+    z-index: 1; 
+}
+
+.plans-blur-1 {
+    width: 32rem;
+    height: 23rem;
+    top: 6rem;
+    left: 0rem;
+    
+}
+
+.plans-blur-2 {
+    width: 32rem;
+    height: 23rem;
+    top: 10rem;
+    right: 0rem;
+    
+}
+
+@media (max-width: 1200px) {
+    .plans-header {
+        font-size: 2.5rem;
+        gap: 3rem;
+    }
+
+    .plans-container > .card-1,
+    .card-2,
+    .card-3 {
+        height: 70vh;
+        width: 25vw;
+    }
+
+    .card-1, .card-3 {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+    .plans-blur-1, .plans-blur-2 {
+        width: 28rem;
+        height: 20rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .plans-header {
+        font-size: 2rem;
+        gap: 2rem;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .plans-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .plans-container > .card-1,
+    .card-2,
+    .card-3 {
+        width: 80%;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .card-1, .card-3 {
+        margin: 0;
+    }
+
+    .plans-blur-1, .plans-blur-2 {
+        width: 24rem;
+        height: 18rem;
+        top: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 768px) {
+    .plans-header {
+        font-size: 1.5rem;
+    }
+
+    .plans-container > .card-1,
+    .card-2,
+    .card-3 {
+        width: 90%;
+    }
+
+    .plans-blur-1, .plans-blur-2 {
+        width: 20rem;
+        height: 16rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .plans-header {
+        font-size: 1.2rem;
+    }
+
+    .plans-container > .card-1,
+    .card-2,
+    .card-3 {
+        width: 100%;
+    }
+
+    .plans-blur-1, .plans-blur-2 {
+        width: 18rem;
+        height: 14rem;
+    }
+
+    .taxt-area > div {
+        gap: 0.5rem;
+    }
+
+    .icon {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    .price {
+        font-size: 2rem;
+    }
+
+    .heading {
+        font-size: 1.2rem;
+    }
+}

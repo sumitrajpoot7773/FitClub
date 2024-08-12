@@ -1,0 +1,144 @@
+.programs{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.programs-header{
+    display: flex;
+    gap: 5rem;
+    font-weight: bold;
+    font-size: 3rem;
+    justify-content: center;
+    color: white;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.program-categories{
+    display: flex;
+    gap: 1rem;
+}
+
+.category{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    background-color: gray;
+    padding: 2rem;
+    color: white;
+
+   
+}
+
+.category>:nth-child(1){
+    width: 3rem;
+    height:2rem;
+    color: white;
+}
+.category>:nth-child(2){
+    font-size: 1.3rem;
+    font-weight: bold;
+    
+}
+.category>:nth-child(3){
+    font-size: 1.1rem;
+    line-height: 25px;
+}
+
+.join-now img{
+     width: 1.5rem;
+     
+}
+
+.category:hover{
+    /* background: var(--plancard); */
+    background: linear-gradient(210.41deg, #fa5842 1.14%, #ffa739 100.75%);
+    cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    .programs-header {
+        font-size: 2.5rem;
+        gap: 3rem;
+    }
+
+    .program-categories {
+        gap: 0.5rem;
+    }
+
+    .category {
+        padding: 1.5rem;
+    }
+
+    .category>:nth-child(2) {
+        font-size: 1.2rem;
+    }
+
+    .category>:nth-child(3) {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .programs-header {
+        font-size: 2rem;
+        gap: 2rem;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .category {
+        padding: 1rem;
+    }
+
+    .category>:nth-child(2) {
+        font-size: 1.1rem;
+    }
+
+    .category>:nth-child(3) {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .programs-header {
+        font-size: 1.5rem;
+    }
+
+    .category {
+        padding: 0.8rem;
+    }
+
+    .category>:nth-child(2) {
+        font-size: 1rem;
+    }
+
+    .category>:nth-child(3) {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .programs-header {
+        font-size: 1.2rem;
+    }
+
+    .category {
+        padding: 0.5rem;
+    }
+
+    .category>:nth-child(2) {
+        font-size: 0.9rem;
+    }
+
+    .category>:nth-child(3) {
+        font-size: 0.7rem;
+    }
+
+    .join-now img {
+        width: 1rem;
+    }
+}

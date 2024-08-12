@@ -1,0 +1,162 @@
+.footer-container {
+    position: relative;
+}
+
+.footer-container > hr {
+    border: 1px solid var(--lightgray);
+}
+
+.footer {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    height: 20rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 4rem;
+}
+
+.social-links > img {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.logo-f > img {
+    width: 10rem;
+}
+
+.blur-f-1 {
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+    width: 26rem;
+    height: 12rem;
+    filter: blur(200px);
+    
+}
+
+.blur-f-2 {
+    position: absolute;
+    bottom: 10%;
+    left: 15%;
+    width: 20rem;
+    height: 10rem;
+    filter: blur(150px);
+   
+}
+
+@media (max-width: 1200px) {
+    .footer {
+        gap: 3rem;
+        height: 18rem;
+    }
+
+    .social-links {
+        gap: 3rem;
+    }
+
+    .logo-f > img {
+        width: 8rem;
+    }
+
+    .blur-f-1 {
+        width: 22rem;
+        height: 10rem;
+    }
+
+    .blur-f-2 {
+        width: 18rem;
+        height: 8rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .footer {
+        gap: 2rem;
+        height: 16rem;
+    }
+
+    .social-links {
+        gap: 2rem;
+    }
+
+    .logo-f > img {
+        width: 6rem;
+    }
+
+    .blur-f-1 {
+        width: 18rem;
+        height: 8rem;
+    }
+
+    .blur-f-2 {
+        width: 16rem;
+        height: 7rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        gap: 1.5rem;
+        height: 14rem;
+    }
+
+    .social-links {
+        gap: 1.5rem;
+    }
+
+    .logo-f > img {
+        width: 5rem;
+    }
+
+    .blur-f-1 {
+        width: 14rem;
+        height: 6rem;
+    }
+
+    .blur-f-2 {
+        width: 12rem;
+        height: 5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer {
+        gap: 1rem;
+        height: 12rem;
+        padding: 1rem;
+    }
+
+    .social-links {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .social-links > img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .logo-f > img {
+        width: 4rem;
+    }
+
+    .blur-f-1 {
+        width: 10rem;
+        height: 4rem;
+        right: 10%;
+    }
+
+    .blur-f-2 {
+        width: 8rem;
+        height: 3rem;
+        left: 10%;
+    }
+}
